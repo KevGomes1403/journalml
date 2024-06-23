@@ -36,7 +36,7 @@ def chat_with_groq(client, initial_message, model="mixtral-8x7b-32768", temperat
                 # Usage information is available on the final chunk
                 assert chunk.x_groq is not None
                 assert chunk.x_groq.usage is not None
-                #print(f"\n\nUsage stats: {chunk.x_groq.usage}")
+                print(f"\n\nUsage stats: {chunk.x_groq.usage}")
                 break
         
         # Ask for the next user input
