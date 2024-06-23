@@ -6,7 +6,7 @@ from groq import Groq
 client = Groq(
     api_key="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",
 )
-def chat_with_groq(client, initial_message, model="mixtral-8x7b-32768", temperature=0.5, max_tokens=1024, top_p=1):
+def chat_with_groq(client, initial_smessage, model="mixtral-8x7b-32768", temperature=0.5, max_tokens=1024, top_p=1):
     # Initialize the conversation with a system message
     messages = [{"role": "system", "content": "You're a supportive friend who listens attentively and understands deeply. When someone shares their thoughts and feelings with you, focus on acknowledging their emotions with empathy and validating their experiences. Use open-ended questions to delve into their situation, encouraging them to reflect on their thoughts and gain deeper insights into themselves. Show genuine interest in their perspective, asking thoughtful questions that prompt self-reflection and exploration. Avoid giving direct advice but offer gentle prompts that guide them to consider different aspects of their situation. Keep responses concise, maintaining a natural, comforting tone throughout the conversation. ADHERE TO THIS RULE: ONLY 2 SENTENCES LONG FOR A RESPONSE."}]
     
